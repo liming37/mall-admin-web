@@ -1,73 +1,31 @@
 <template>
   <div class="app-container">
-    <div class="address-layout">
-      <el-row :gutter="20">
-        <el-col :span="6">
-          <div class="out-border">
-            <div class="layout-title">学习教程</div>
-            <div class="color-main address-content">
-              <a href="https://www.macrozheng.com" target="_blank">mall学习教程</a>
-            </div>
-          </div>
-        </el-col>
-        <el-col :span="6">
-          <div class="out-border">
-            <div class="layout-title">视频教程</div>
-            <div class="color-main address-content">
-              <a href="https://www.macrozheng.com/mall/catalog/mall_video.html" target="_blank">mall视频教程（2023）</a>
-            </div>
-          </div>
-        </el-col>
-        <el-col :span="6">
-          <div class="out-border">
-            <div class="layout-title">点Star支持项目</div>
-            <div class="color-main address-content">
-              <a href="https://github.com/macrozheng/mall" target="_blank">mall项目</a>
-            </div>
-          </div>
-        </el-col>
-      </el-row>
-    </div>
     <div class="total-layout">
       <el-row :gutter="20">
-        <el-col :span="6">
+        <el-col :span="8">
           <div class="total-frame">
             <img :src="img_home_order" class="total-icon">
             <div class="total-title">今日订单总数</div>
             <div class="total-value">200</div>
           </div>
         </el-col>
-        <el-col :span="6">
+        <el-col :span="8">
           <div class="total-frame">
             <img :src="img_home_today_amount" class="total-icon">
             <div class="total-title">今日销售总额</div>
             <div class="total-value">￥5000.00</div>
           </div>
         </el-col>
-        <el-col :span="6">
+        <el-col :span="8">
           <div class="total-frame">
             <img :src="img_home_yesterday_amount" class="total-icon">
             <div class="total-title">昨日销售总额</div>
             <div class="total-value">￥5000.00</div>
           </div>
         </el-col>
-        <!--<el-col :span="6">-->
-          <!--<div class="total-frame">-->
-            <!--<svg-icon icon-class="total-week" class="total-icon">-->
-            <!--</svg-icon>-->
-            <!--<div class="total-title">近7天销售总额</div>-->
-            <!--<div class="total-value">￥50000.00</div>-->
-          <!--</div>-->
-        <!--</el-col>-->
       </el-row>
     </div>
-    <el-card class="mine-layout">
-      <div style="text-align: center">
-        <img width="150px" height="150px" src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/banner/qrcode_for_macrozheng_258.jpg">
-      </div>
-      <div style="text-align: center">mall全套学习教程连载中！</div>
-      <div style="text-align: center;margin-top: 5px"><span class="color-main">关注公号</span>，第一时间获取。</div>
-    </el-card>
+
     <div class="un-handle-layout">
       <div class="layout-title">待处理事务</div>
       <div class="un-handle-content">
@@ -345,7 +303,7 @@
 
 <style scoped>
   .app-container {
-    margin-top: 40px;
+    margin-top: 10px;
     margin-left: 120px;
     margin-right: 120px;
   }
@@ -354,7 +312,7 @@
   }
 
   .total-layout {
-    margin-top: 20px;
+    margin-top: 0;
   }
 
   .total-frame {
@@ -428,13 +386,7 @@
     margin-top: 20px;
     border: 1px solid #DCDFE6;
   }
-  .mine-layout {
-    position: absolute;
-    right: 140px;
-    top: 107px;
-    width: 250px;
-    height: 235px;
-  }
+
   .address-content{
     padding: 20px;
     font-size: 18px
